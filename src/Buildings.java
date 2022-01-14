@@ -18,10 +18,6 @@ public class Buildings {
     }
 
     public void remove(String name){
-
-        if (this.initialResident == name){
             this.initialResident = null;
-        }
-
     }
 }
