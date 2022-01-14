@@ -46,4 +46,15 @@ public class Tests {
 
         Assert.assertTrue(buildings.initialResident == null);
     }
+
+    @Test
+    public void itShouldDoNothingIfNameIsFalse_GivenName() {
+        String resident = "Mark";
+        int id = 0;
+
+        Buildings buildings = new Buildings(resident, id);
+
+        Assert.assertFalse(buildings.initialResident == null);
+
+    }
 }
