@@ -23,4 +23,27 @@ public class Tests {
 
         Assert.assertEquals(buildings.initialResidents, residents);
     }
+
+    @Test
+    public void itShouldAddAnResident_GivenResident() {
+        String resident = "Bob";
+        String sndResident = "Mark";
+        Integer id = 0;
+
+        Buildings buildings = new Buildings(resident, id);
+        buildings.add(sndResident);
+
+        Assert.assertEquals(buildings.initialResidents[0], sndResident);
+    }
+
+    @Test
+    public void itShouldRemoveResidentByName_GivenResident() {
+        String resident = "Mark";
+        int id = 0;
+
+        Buildings buildings = new Buildings(resident, id);
+        buildings.remove(resident);
+
+        Assert.assertTrue(buildings.initialResident == null);
+    }
 }
