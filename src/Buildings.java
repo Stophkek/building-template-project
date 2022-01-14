@@ -7,4 +7,9 @@ public class Buildings {
         this.id = id;
         this.initialResident = initialResident;
     }
+
+    public Buildings(String[] initialResidents, Integer id){
+        this.initialResidents = initialResidents;
+        this.id = id;
+    }
 }
